@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- フィルタ -->
+  <ItemGroup>
+    <Filter Include="ゲーム">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="リソース">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="リソース\テクスチャ">
+      <UniqueIdentifier>{655e5925-f892-4d8e-9ffd-a9288677e783}</UniqueIdentifier>
+      <Extensions>bmp;png;gif;jpg;jpeg;jpe;cur;dlg;rc2;rct;bin;rgs;resx;tiff;tif;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="リソース\音">
+      <UniqueIdentifier>{0bbc1464-887f-45a8-9777-15cbd291435f}</UniqueIdentifier>
+      <Extensions>wav;ogg;mp3</Extensions>
+    </Filter>
+    <Filter Include="リソース\アイコン">
+      <UniqueIdentifier>{69b206f7-9aa0-43f7-b91f-2f5604903f67}</UniqueIdentifier>
+      <Extensions>rc;ico</Extensions>
+    </Filter>
+    <Filter Include="リソース\フォント">
+      <UniqueIdentifier>{e70a2ff4-85b3-4acd-a429-b908f1125170}</UniqueIdentifier>
+      <Extensions>dft</Extensions>
+    </Filter>
+    <Filter Include="ライブラリ">
+      <UniqueIdentifier>{3e1e3eaf-8a7a-4312-adfd-517513bb4b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ライブラリ\ゲームライブラリ">
+      <UniqueIdentifier>{7734c7ef-fb20-4977-b712-bf0712b1778c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ライブラリ\ユーティリティ">
+      <UniqueIdentifier>{daae40c7-ff74-47e6-98c1-472de706acab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\TITLESCENE">
+      <UniqueIdentifier>{3568705c-026d-478a-8730-b1f8e0e74062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\PLAYSCENE">
+      <UniqueIdentifier>{7ebe9260-235f-4b24-8326-3eb89fc4ff26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\RESULTSCENE">
+      <UniqueIdentifier>{f4041cc3-f060-48f2-a21a-f9e4cae2ccd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\Framework">
+      <UniqueIdentifier>{8bfe0943-2304-4eba-9064-4acadf259b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\Effect">
+      <UniqueIdentifier>{2fddc0b3-fc53-4d0e-8fa0-1db5447a09c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\PLAYSCENE\Player">
+      <UniqueIdentifier>{e9cab806-8d86-4ea0-b955-00e9f6db5d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\PLAYSCENE\BulletManager">
+      <UniqueIdentifier>{5b63282e-7d19-421b-9923-17b7f6537cf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\PLAYSCENE\BulletManager\Bullet">
+      <UniqueIdentifier>{ff815d10-acda-4dae-8cc5-36a0f8f87b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\PLAYSCENE\FireworksManager">
+      <UniqueIdentifier>{faa7deb2-215a-4e7a-a54b-525283b380df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\PLAYSCENE\FireworksManager\Fireworks">
+      <UniqueIdentifier>{96c3e210-2bf7-46a7-aebb-4f299777a16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\PLAYSCENE\Collision">
+      <UniqueIdentifier>{92dbb194-1c60-494a-94ec-c5a49cfd6887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\SaveData">
+      <UniqueIdentifier>{925a65fe-1df9-485d-bcfd-42df8234365a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲーム\TITLESCENE\SoundWave">
+      <UniqueIdentifier>{36baeea9-02ca-4902-9631-1b69827077ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <!-- ソースファイル -->
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibGraphics.cpp">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\GameLibrary\GameLibInput.cpp">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\GameLibrary\GameLibMath.cpp">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\GameLibrary\GameLibSystem.cpp">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\GameLibrary\GameLibTime.cpp">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameMain.cpp">
+      <Filter>ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\GameLibrary\GameLibSprite.cpp">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\GameLibrary\GameLibFade.cpp">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\TITLESCENE\TitleScene.cpp">
+      <Filter>ゲーム\TITLESCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\PlayScene.cpp">
+      <Filter>ゲーム\PLAYSCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\RESULTSCENE\Resultscene.cpp">
+      <Filter>ゲーム\RESULTSCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\Framework\ResourceManager.cpp">
+      <Filter>ゲーム\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\Effect\Effect.cpp">
+      <Filter>ゲーム\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\Player\Player.cpp">
+      <Filter>ゲーム\PLAYSCENE\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_0.cpp">
+      <Filter>ゲーム\PLAYSCENE\BulletManager\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\BulletManager.cpp">
+      <Filter>ゲーム\PLAYSCENE\BulletManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_0.cpp">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager\Fireworks</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\FireworksManager\FireworksManager.cpp">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\Collision\Collision.cpp">
+      <Filter>ゲーム\PLAYSCENE\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_1.cpp">
+      <Filter>ゲーム\PLAYSCENE\BulletManager\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_1.cpp">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager\Fireworks</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\SaveData\SaveData.cpp">
+      <Filter>ゲーム\SaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\TITLESCENE\SoundWave\SoundWave.cpp">
+      <Filter>ゲーム\TITLESCENE\SoundWave</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_2.cpp">
+      <Filter>ゲーム\PLAYSCENE\BulletManager\Bullet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <!-- ヘッダファイル -->
+  <ItemGroup>
+    <ClInclude Include="Libraries\GameLibrary\GameLib.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\GameLibrary\GameLibMath.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\GameLibrary\GameLibSystem.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\GameLibrary\GameLibGraphics.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\GameLibrary\GameLibInput.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\GameLibrary\GameLibTime.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Utilities\MemoryLeakDetector.h">
+      <Filter>ライブラリ\ユーティリティ</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameMain.h">
+      <Filter>ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\GameLibrary\GameLibSprite.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\GameLibrary\GameLibFade.h">
+      <Filter>ライブラリ\ゲームライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\IScene.h">
+      <Filter>ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\Utility.h">
+      <Filter>ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\TITLESCENE\TitleScene.h">
+      <Filter>ゲーム\TITLESCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\PlayScene.h">
+      <Filter>ゲーム\PLAYSCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\RESULTSCENE\Resultscene.h">
+      <Filter>ゲーム\RESULTSCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\Framework\ResourceManager.h">
+      <Filter>ゲーム\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\Effect\Effect.h">
+      <Filter>ゲーム\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\Player\Player.h">
+      <Filter>ゲーム\PLAYSCENE\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet.h">
+      <Filter>ゲーム\PLAYSCENE\BulletManager\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_0.h">
+      <Filter>ゲーム\PLAYSCENE\BulletManager\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\BulletManager.h">
+      <Filter>ゲーム\PLAYSCENE\BulletManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\BulletType.h">
+      <Filter>ゲーム\PLAYSCENE\BulletManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks.h">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager\Fireworks</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_0.h">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager\Fireworks</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\FireworksManager.h">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\Collision\Collision.h">
+      <Filter>ゲーム\PLAYSCENE\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_1.h">
+      <Filter>ゲーム\PLAYSCENE\BulletManager\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\FireworksType.h">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_1.h">
+      <Filter>ゲーム\PLAYSCENE\FireworksManager\Fireworks</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\SaveData\SaveData.h">
+      <Filter>ゲーム\SaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\TITLESCENE\SoundWave\SoundWave.h">
+      <Filter>ゲーム\TITLESCENE\SoundWave</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_2.h">
+      <Filter>ゲーム\PLAYSCENE\BulletManager\Bullet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <!-- リソースファイル -->
+  <ItemGroup>
+    <None Include="Resources\Audio\SE00.ogg">
+      <Filter>リソース\音</Filter>
+    </None>
+    <None Include="Resources\Fonts\PongScore.dft">
+      <Filter>リソース\フォント</Filter>
+    </None>
+    <ClInclude Include="Resources\Icon\Icon.h">
+      <Filter>リソース\アイコン</Filter>
+    </ClInclude>
+    <Image Include="Resources\Icon\Icon.ico">
+      <Filter>リソース\アイコン</Filter>
+    </Image>
+    <ResourceCompile Include="Resources\Icon\Icon.rc">
+      <Filter>リソース\アイコン</Filter>
+    </ResourceCompile>
+    <Image Include="Resources\Textures\TridentLogo.png">
+      <Filter>リソース\テクスチャ</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

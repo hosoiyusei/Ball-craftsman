@@ -1,0 +1,19 @@
+#pragma once
+
+enum class BULLET_TYPE :int
+{
+	TYPE_PLAYER,
+	TYPE_FIREWORKS,
+};
+
+enum class BULLET_COLOR :int
+{
+	TYPE_RED,
+	TYPE_ORANGE,
+	TYPE_YELLOW,
+	TYPE_GREEN,
+	TYPE_BLUE,
+	TYPE_FEVER,
+
+	TYPE_NORMAL,
+};

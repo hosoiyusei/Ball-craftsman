@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{a665d9f0-6155-4935-a563-536b9c44485f}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameAppTemplate_DxLib_1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)\Libraries;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)\Libraries;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)\Libraries;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)\Libraries;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>GameLibrary\GameLib.h;Utilities\MemoryLeakDetector.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>GameLibrary\GameLib.h;Utilities\MemoryLeakDetector.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <!-- ソースファイル -->
+  <ItemGroup>
+    <ClCompile Include="GAME\Effect\Effect.cpp" />
+    <ClCompile Include="GAME\Framework\ResourceManager.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\BulletManager.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_0.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_1.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_2.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\Collision\Collision.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\FireworksManager\FireworksManager.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_0.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_1.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\Player\Player.cpp" />
+    <ClCompile Include="GAME\PLAYSCENE\PlayScene.cpp" />
+    <ClCompile Include="GAME\RESULTSCENE\Resultscene.cpp" />
+    <ClCompile Include="GAME\SaveData\SaveData.cpp" />
+    <ClCompile Include="GAME\TITLESCENE\SoundWave\SoundWave.cpp" />
+    <ClCompile Include="GAME\TITLESCENE\TitleScene.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibFade.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibSprite.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibGraphics.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibInput.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibMath.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibSystem.cpp" />
+    <ClCompile Include="Libraries\GameLibrary\GameLibTime.cpp" />
+    <ClCompile Include="Game\GameMain.cpp" />
+  </ItemGroup>
+  <!-- ヘッダファイル -->
+  <ItemGroup>
+    <ClInclude Include="GAME\Effect\Effect.h" />
+    <ClInclude Include="GAME\Framework\ResourceManager.h" />
+    <ClInclude Include="GAME\IScene.h" />
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\BulletManager.h" />
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\BulletType.h" />
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet.h" />
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_0.h" />
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_1.h" />
+    <ClInclude Include="GAME\PLAYSCENE\BulletManager\Bullet\Bullet_2.h" />
+    <ClInclude Include="GAME\PLAYSCENE\Collision\Collision.h" />
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\FireworksManager.h" />
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\FireworksType.h" />
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks.h" />
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_0.h" />
+    <ClInclude Include="GAME\PLAYSCENE\FireworksManager\Fireworks\Fireworks_1.h" />
+    <ClInclude Include="GAME\PLAYSCENE\Player\Player.h" />
+    <ClInclude Include="GAME\PLAYSCENE\PlayScene.h" />
+    <ClInclude Include="GAME\RESULTSCENE\Resultscene.h" />
+    <ClInclude Include="GAME\SaveData\SaveData.h" />
+    <ClInclude Include="GAME\TITLESCENE\SoundWave\SoundWave.h" />
+    <ClInclude Include="GAME\TITLESCENE\TitleScene.h" />
+    <ClInclude Include="GAME\Utility.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLibFade.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLibGraphics.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLibInput.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLibMath.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLibSprite.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLibSystem.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLibTime.h" />
+    <ClInclude Include="Libraries\GameLibrary\GameLib.h" />
+    <ClInclude Include="Libraries\Utilities\MemoryLeakDetector.h" />
+    <ClInclude Include="Game\GameMain.h" />
+  </ItemGroup>
+  <!--リソースファイル -->
+  <ItemGroup>
+    <!-- 音 -->
+    <None Include="Resources\Audio\SE00.ogg" />
+    <!-- フォント -->
+    <None Include="Resources\Fonts\PongScore.dft" />
+    <!-- アイコン -->
+    <ClInclude Include="Resources\Icon\Icon.h" />
+    <Image Include="Resources\Icon\Icon.ico" />
+    <ResourceCompile Include="Resources\Icon\Icon.rc" />
+    <!-- テクスチャ -->
+    <Image Include="Resources\Textures\TridentLogo.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
